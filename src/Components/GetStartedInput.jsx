@@ -1,19 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import LoginForm from "./Input";
 
 const GetStartedInput = () => {
-
-  const [lastName, SetLastName] = useState('');
-  const [fistName, SetFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [firstName, setFirstName] = useState('');
 
   const handleInput = (event) => {
     const { name, value } = event.target;
 
     if (name === 'lastName') {
-      SetLastName(value);
-    }  else if (name === 'fistName') {
-      SetFirstName(value); // Set firstname value
-  }}
+      setLastName(value);
+    } else if (name === 'firstName') {
+      setFirstName(value); // Corrected variable name
+    }
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -21,36 +21,37 @@ const GetStartedInput = () => {
     console.log('FirstName:', firstName);
   };
 
-    return(
+  return (
     <>
-    <div className="input-btn-container" onSubmit={handleSubmit}>
-            <div className="lastname-container">
-         <label className="lastname">First name</label>
-         <input 
-         type="lastname" 
-         id="lastname"
-         className="lastname-input"
-          name="lastname" 
-          onChange={handleInput}
-            value=''
+      <form className="input-btn-container" onSubmit={handleSubmit}>
+        <div className="lastname-container">
+          <label className="lastname">First name</label>
+          <input 
+            type="text"  // Corrected type
+            id="firstName"  // Unique id
+            className="lastname-input"
+            name="firstName"  // Corrected name
+            onChange={handleInput}
+            value={firstName}  // Bind value to state
             required
-            />
-            </div>
-            <div className="lastname-container">
-         <label className="lastname">Last name</label>
-         <input 
-         type="lastname" 
-         id="lastname"
-         className="lastname-input"
-          name="lastname" 
-          onChange={handleInput}
-            value=''
+          />
+        </div>
+        <div className="lastname-container">
+          <label className="lastname">Last name</label>
+          <input 
+            type="text"  // Corrected type
+            id="lastName"  // Unique id
+            className="lastname-input"
+            name="lastName"  // Corrected name
+            onChange={handleInput}
+            value={lastName}  // Bind value to state
             required
-            />
-            </div>
-            <LoginForm />    
-    </div>
+          />
+        </div>
+        <LoginForm />    
+      </form>
     </>
-  )
+  );
 }
+
 export default GetStartedInput;
