@@ -1,0 +1,168 @@
+.header-container {
+    height: 100px;
+    margin-top: -10px;
+    padding: 0;
+  }
+
+  .logo {
+    margin-left: 55px;
+     width: 50%;
+    }
+
+    .header-des {
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+     }
+
+     .row-container {
+      display: flex;
+      position: relative;
+     }
+
+     .row-one{
+      width: 290%;
+      height: 10px;
+      background-color: rgb(27, 27, 83);
+    }
+
+    .row-two {
+      width: 290%;
+      height: 10px;
+      background-color: rgb(193, 193, 201);
+    }
+
+     .container {
+      display: flex;
+      flex-direction: row;
+      margin:10px 200px 10px 200px;
+  }
+  
+  .section-container {
+    display: block; 
+    width: 200%;
+  }
+
+  .getstarted-section-container{
+    display: block; 
+    width: 150%;
+  }
+  .section-subcontainer{
+    display: flex;
+  }
+
+  .section-title {
+    font-size: 20px;
+    color: rgb(27, 27, 83);
+  }
+
+  .row-three {
+    width: 9px;
+    height: 30px;
+    background-color: rgb(27, 27, 83);
+  }
+
+  .section-text {
+    margin-top: -6px;
+    padding: 5px;
+    color: rgb(79, 79, 85);
+  }
+
+  .form-container {
+   margin-top: -20px;
+  }
+
+  .email-container, .password-container, .lastname-container, .firstname-container {
+    display:flex;
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  
+  .password-container {
+    padding-top: 10px;
+  }
+
+  .email, .password, .lastname, .firstname {
+   font-weight: 600;
+   font-size:16px;
+  }
+
+  .email-input, .password-input, .lastname-input, .firstname-input{
+    height: 50px;
+    border: 0px;
+    width: 89%;
+    background-color: rgb(193, 193, 201);
+  }
+
+ .email-input:hover, .password-input:hover {
+    animation: borderAnimation 0.3s forwards;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #f0f8ff;
+  }
+
+  .sign-text {
+    color: rgb(27, 27, 83);
+    font-weight: 600;
+  }
+
+.button-container {
+    padding-top: 20px;
+}
+
+.button {
+background-color: rgb(27, 27, 83);
+width: 70px;
+height: 40px;
+border-radius: 10%;
+border: 0px;
+}
+
+.article-container {
+ display: block;
+  }
+
+  .article-text-container, .getstarted-article-text-container {
+    position: relative;
+    width: 95%;
+    bottom: -90%;
+    margin-left: 50px;
+    padding-left: 30px;
+  }
+
+
+  .article-text-header {
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    padding: 3px 20px 3px  10px;
+  }
+
+.article-text {
+    margin-top: -19px;
+    padding: 12px;  
+    text-align: center;
+    color: rgb(79, 79, 85);
+}
+  .images {
+    position: static;
+  }
+  
+  .image-one {
+    position: absolute;
+    width: 37%;
+    height: 55%;
+    right: 10%;
+    top: 80px;
+  }
+
+  .image-two{
+    position: absolute;
+    width: 30%;
+    height: 51%;
+    right: 10%;
+    top: 98px;
+  }
+
+  .button {
+    color: white;
+  } 
